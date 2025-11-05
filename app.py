@@ -434,7 +434,7 @@ st.markdown(
 
 
 st.title("🩺 DiaPredict AI: Diabetes Risk Prediction")
-st.markdown("<h4 style='text-align: center;'>AI-powered assistant for diabetes risk assessment.</h4>", unsafe_allow_html=True)
+
 
 
 # --- Model Loading (Check if successful) ---
@@ -454,10 +454,10 @@ if model is None:
 # -----------------------------
 # Tabs
 # -----------------------------
-tabs = st.tabs(["Single Prediction", "Clinical Reference"])
+tabs = st.tabs(["Clinical Interpretation", "Clinical Reference"])
 
 with tabs[0]:
-    st.subheader("Single Patient Prediction")
+    st.subheader("Patient Prediction")
     st.markdown("Enter the patient's feature values:")
     user_vals_input = {} # Store user selections with text (e.g., "Yes") for PDF/display
     user_vals_model = {} # Store numerically mapped values for the model & risk explain
