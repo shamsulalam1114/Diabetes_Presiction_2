@@ -454,7 +454,7 @@ if model is None:
 # -----------------------------
 # Tabs
 # -----------------------------
-tabs = st.tabs(["Clinical Interpretation", "Clinical Reference"])
+tabs = st.tabs(["Prediction", "Clinical Interpretation"])
 
 with tabs[0]:
     st.subheader("Patient Prediction")
